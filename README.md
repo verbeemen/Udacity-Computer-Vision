@@ -1,2 +1,4 @@
-# Udacity-Computer-Vision
-Project of the Undacity - Computer vision course
+# Udacity - Computer Vision
+This repo contains the projects which were required for the Undacity's Compyter Vision course.
+
+ - Project 1: Facial Keypoint Detection
