@@ -1,5 +1,5 @@
 # Project Overview  
-In this small projec, I try to build a facial keypoint detection system.   
+In this small project, I tried to build a facial keypoint detection system.   
 As an input, I use an image with a face, and try to predict the location of 68 distinguishing keypoints (on the faces)!  
   
 The Facial keypoints include points around the eyes, nose, and mouth on a face and are used in many applications.  
