@@ -23,7 +23,7 @@ Weights and biases is a developer tool for:
  - Hyperparameter optimization
  - Model and dataset versioning  
    
-If you are really interested in the exact parameters of my model for this project... then you can find them in the link below.  
+If you are really interested in the exact parameters of my model... then you can find them in the link below.  
 https://wandb.ai/verbeemen/udacity_computer_vision-project_2?workspace=user-verbeemen  
   
 <img src="https://github.com/verbeemen/Udacity-Computer-Vision/blob/main/Project_2_Image_Captioning/images/image_captioning_loss.png"  width="640px"/>
