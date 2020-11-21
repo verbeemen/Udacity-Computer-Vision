@@ -1,6 +1,6 @@
 # Image Captioning:
 In this project we have tried to create a model that is capable of describing "things" that are present in an image.  
-For this we have used the respective items: COCO-Dataset, ResNet-50, and a LSTM.  
+For this, we have used the respective items: COCO-Dataset, ResNet-50, and a LSTM.  
 
 First of all, we will get the images and their descriptions from the COCO database.
 Then we chase the images through ResNet-50. This will try to say which objects are present in the image (encoder). And Finally, we feed that information to an LSTM (RNN), which then tries to form a sentence starting from the input of the encoder.
