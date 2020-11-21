@@ -9,8 +9,8 @@ Then we chase the images through ResNet-50. This will try to say which objects a
   
   
 # A guiding paper:
-**Url**: https://arxiv.org/pdf/1411.4555.pdf
-**Title**: Show and Tell: A Neural Image Caption Generator:
+**Url**: https://arxiv.org/pdf/1411.4555.pdf  
+**Title**: Show and Tell: A Neural Image Caption Generator  
 
 # Result:
 ![Result](https://github.com/verbeemen/Udacity-Computer-Vision/blob/main/Project_2_Image_Captioning/images/result.png "Result of my cat.")
