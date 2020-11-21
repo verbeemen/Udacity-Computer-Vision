@@ -3,7 +3,7 @@ In this project we have tried to create a model that is capable of describing "t
 For this, we have used the respective items: COCO-Dataset, ResNet-50, and a LSTM.  
 
 First of all, we will get the images and their descriptions from the COCO database.
-Then we chase the images through ResNet-50. This will try to say which objects are present in the image (encoder). And Finally, we feed that information to an LSTM (RNN), which then tries to form a sentence starting from the input of the encoder.
+Then we chase the images through ResNet-50. This will try to say which objects are present in the image (encoder). And Finally, we feed that information to a LSTM (RNN), which then tries to form a sentence starting from the input of the encoder.
 
 <img src="https://github.com/verbeemen/Udacity-Computer-Vision/blob/main/Project_2_Image_Captioning/images/encoder-decoder.png" width="900px"/>
   
