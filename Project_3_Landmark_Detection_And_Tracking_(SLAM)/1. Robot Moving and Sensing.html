@@ -13234,8 +13234,8 @@ div#notebook {
 
             <span class="c1">## TODO: For each landmark</span>
             <span class="c1">## 1. compute dx and dy, the distances between the robot and the landmark</span>
-            <span class="n">dx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">landmark_x_y</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-            <span class="n">dy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">landmark_x_y</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">dx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">landmark_x_y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">dy</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">landmark_x_y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
             
             <span class="c1">## 2. account for measurement noise by *adding* a noise component to dx and dy</span>
             <span class="c1">##    - The noise component should be a random value between [-1.0, 1.0)*measurement_noise</span>
@@ -13254,7 +13254,7 @@ div#notebook {
             <span class="c1">##    as list.append([index, dx, dy]), this format is important for data creation done later</span>
             
             <span class="c1"># I&#39;m using the euclidean distance because it is more realistic to handle it like a circkle</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">dx</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">dy</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">measurement_range</span><span class="p">:</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">dx</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">dy</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">measurement_range</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">measurement_range</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
                 <span class="k">continue</span>
                 
             <span class="c1"># add the landmark point</span>

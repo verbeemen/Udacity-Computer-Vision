@@ -83,8 +83,8 @@ class robot:
 
             ## TODO: For each landmark
             ## 1. compute dx and dy, the distances between the robot and the landmark
-            dx = np.abs(self.x - landmark_x_y[0])
-            dy = np.abs(self.y - landmark_x_y[1])
+            dx = self.x - landmark_x_y[0]
+            dy = self.y - landmark_x_y[1]
             
             ## 2. account for measurement noise by *adding* a noise component to dx and dy
             ##    - The noise component should be a random value between [-1.0, 1.0)*measurement_noise
@@ -103,7 +103,7 @@ class robot:
             ##    as list.append([index, dx, dy]), this format is important for data creation done later
             
             # I'm using the euclidean distance because it is more realistic to handle it like a circkle
-            if (dx**2 + dy**2)**0.5 > self.measurement_range:
+            if (dx**2 + dy**2)**0.5 > self.measurement_range and self.measurement_range != -1:
                 continue
                 
             # add the landmark point
@@ -111,6 +111,8 @@ class robot:
 
         ## TODO: return the final, complete list of measurements
         return measurements
+
+    
 
     # --------
     # make_landmarks:
